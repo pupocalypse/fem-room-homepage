@@ -1,0 +1,32 @@
+@import "./partials/fonts";
+@import "./partials/variables";
+@import "./partials/mixins";
+@import "./partials/header";
+@import "./partials/hero";
+@import "./partials/info-card";
+
+// global resets
+html {
+  font-size: 12px;
+}
+
+body,
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Spartan, sans-serif;
+  font-weight: 500;
+}
+
+// global typography
+h1 {
+  color: $primary-heading-text;
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin: 1.5rem 0;
+}
+
+p {
+  color: $primary-body-text;
+  line-height: 1.65rem;
+}

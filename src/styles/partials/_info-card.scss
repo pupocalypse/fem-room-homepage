@@ -1,0 +1,17 @@
+.info-card {
+  padding: 4rem 3rem;
+
+  &__text {
+    margin-bottom: 3rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $primary-heading-text;
+    letter-spacing: 0.75rem;
+  }
+
+  &__link-arrow {
+    margin-left: 1rem;
+  }
+}
