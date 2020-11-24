@@ -3,7 +3,10 @@
 @import "./partials/mixins";
 @import "./partials/header";
 @import "./partials/hero";
+@import "./partials/carousel-buttons";
 @import "./partials/info-card";
+@import "./partials/gallery-image";
+@import "./partials/about";
 
 // global resets
 html {
@@ -26,7 +29,20 @@ h1 {
   margin: 1.5rem 0;
 }
 
+h3 {
+  color: $primary-heading-text;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.35rem;
+  margin-bottom: 1.5rem;
+}
+
 p {
   color: $primary-body-text;
-  line-height: 1.65rem;
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+
+main {
+  font-size: 0;
 }

@@ -1,6 +1,7 @@
 .hero-image {
   width: 100%;
   height: 100vw;
+  position: relative;
 
   @include desktop {
     width: 60%;

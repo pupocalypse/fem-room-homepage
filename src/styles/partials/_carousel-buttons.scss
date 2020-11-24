@@ -1,0 +1,14 @@
+.carousel-buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  &__button {
+    width: 5.25rem;
+    height: 5.25rem;
+    padding: 1.75rem;
+    object-fit: contain;
+    object-position: center;
+    background: $primary-heading-text;
+  }
+}
