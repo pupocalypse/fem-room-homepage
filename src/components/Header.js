@@ -9,6 +9,14 @@ function Header() {
         <img src={menuIcon} alt="" />
       </button>
       <img className="header__logo" src={roomLogo} alt="" />
+      <nav className="header__nav">
+        <ul className="header__nav-list">
+          <li className="header__nav-link">home</li>
+          <li className="header__nav-link">shop</li>
+          <li className="header__nav-link">about</li>
+          <li className="header__nav-link">contact</li>
+        </ul>
+      </nav>
     </header>
   );
 }

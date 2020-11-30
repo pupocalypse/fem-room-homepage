@@ -1,6 +1,14 @@
 .info-card {
   padding: 4.5rem 3rem;
 
+  @include desktop {
+    width: 40%;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 3rem 7rem 6rem;
+  }
+
   &__link {
     text-decoration: none;
     color: $primary-heading-text;

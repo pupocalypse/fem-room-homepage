@@ -3,6 +3,10 @@
   bottom: 0;
   right: 0;
 
+  @include desktop {
+    right: -10vw;
+  }
+
   &__button {
     width: 5.25rem;
     height: 5.25rem;
@@ -14,6 +18,11 @@
 
     &:hover {
       background: $cta-hover;
+    }
+
+    @include desktop {
+      width: 5vw;
+      height: 5vw;
     }
   }
 

@@ -10,11 +10,39 @@
   align-items: center;
   justify-content: center;
 
+  @include desktop {
+    justify-content: flex-start;
+    padding-left: 6rem;
+  }
+
   &__menu-button {
     padding: 0;
     border: none;
     background: none;
     position: absolute;
     left: 2rem;
+
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &__nav {
+    display: none;
+
+    @include desktop {
+      display: block;
+    }
+  }
+
+  &__nav-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav-link {
+    padding: 1.5rem;
+    color: white;
   }
 }

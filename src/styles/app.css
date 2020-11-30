@@ -17,12 +17,68 @@
           justify-content: center;
 }
 
+@media screen and (min-width: 1440px) {
+  .header {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-left: 6rem;
+  }
+}
+
 .header__menu-button {
   padding: 0;
   border: none;
   background: none;
   position: absolute;
   left: 2rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .header__menu-button {
+    display: none;
+  }
+}
+
+.header__nav {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .header__nav {
+    display: block;
+  }
+}
+
+.header__nav-list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__nav-link {
+  padding: 1.5rem;
+  color: white;
+}
+
+.hero {
+  width: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    width: 100%;
+    height: 60vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .hero__image {
@@ -47,6 +103,8 @@
 @media screen and (min-width: 1440px) {
   .hero__image--slide-1 {
     background: url("../assets/images/desktop-image-hero-1.jpg");
+    background-size: cover;
+    background-position: center;
   }
 }
 
@@ -59,6 +117,8 @@
 @media screen and (min-width: 1440px) {
   .hero__image--slide-2 {
     background: url("../assets/images/desktop-image-hero-2.jpg");
+    background-size: cover;
+    background-position: center;
   }
 }
 
@@ -70,7 +130,9 @@
 
 @media screen and (min-width: 1440px) {
   .hero__image--slide-3 {
-    background: url("../assets/images/desktop-image-hero-2.jpg");
+    background: url("../assets/images/desktop-image-hero-3.jpg");
+    background-size: cover;
+    background-position: center;
   }
 }
 
@@ -78,6 +140,12 @@
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .carousel-buttons {
+    right: -10vw;
+  }
 }
 
 .carousel-buttons__button {
@@ -96,6 +164,13 @@
   background: #444444;
 }
 
+@media screen and (min-width: 1440px) {
+  .carousel-buttons__button {
+    width: 5vw;
+    height: 5vw;
+  }
+}
+
 .carousel-buttons__icon {
   width: 100%;
   height: 100%;
@@ -107,6 +182,20 @@
 
 .info-card {
   padding: 4.5rem 3rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .info-card {
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 3rem 7rem 6rem;
+  }
 }
 
 .info-card__link {
@@ -141,8 +230,29 @@
      object-position: center;
 }
 
+@media screen and (min-width: 1440px) {
+  .gallery-image {
+    width: 30%;
+    height: 40vh;
+  }
+}
+
 .about {
   padding: 4.5rem 3rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .about {
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 2.5rem 4.5rem 4.5rem;
+  }
 }
 
 html {
@@ -165,6 +275,12 @@ h1 {
   margin: 1.5rem 0;
 }
 
+@media screen and (min-width: 1440px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
 h3 {
   color: #000000;
   font-size: 1rem;
@@ -181,5 +297,17 @@ p {
 
 main {
   font-size: 0;
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 /*# sourceMappingURL=app.css.map */

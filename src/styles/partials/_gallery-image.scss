@@ -3,4 +3,9 @@
   height: 20rem;
   object-fit: cover;
   object-position: center;
+
+  @include desktop {
+    width: 30%;
+    height: 40vh;
+  }
 }
